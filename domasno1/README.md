@@ -4,7 +4,7 @@ A new Flutter project
 
 This project is a starting point for a Flutter application.
 
-To see the images you can go on this links:
+
 ![slika1](assets/images/slika1.png)
 ![slika2](assets/images/slika2.png)
 ![slika3](assets/images/slika3.png)
