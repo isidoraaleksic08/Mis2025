@@ -1,16 +1,11 @@
 # domasno1
 
-A new Flutter project.
-
-## Getting Started
+A new Flutter project
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To see the images you can go on this links:
+![slika1](assets/images/slika1.png)
+![slika2](assets/images/slika2.png)
+![slika3](assets/images/slika3.png)
+![slika4](assets/images/slika4.png)
