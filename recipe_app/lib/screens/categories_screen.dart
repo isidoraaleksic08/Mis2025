@@ -4,7 +4,6 @@ import '../models/category_model.dart';
 import '../widgets/category_card.dart';
 import '../widgets/search_bar.dart';
 
-
 class CategoriesScreen extends StatefulWidget {
   const CategoriesScreen({Key? key}) : super(key: key);
 
@@ -32,10 +31,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         categories = cats;
         filtered = cats;
       });
-    } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Error loading categories')));
-      }
     } finally {
       setState(() => loading = false);
     }
@@ -43,7 +38,9 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
 
   void _onSearch(String q) {
     setState(() {
-      filtered = categories.where((c) => c.name.toLowerCase().contains(q.toLowerCase())).toList();
+      filtered = categories
+          .where((c) => c.name.toLowerCase().contains(q.toLowerCase()))
+          .toList();
     });
   }
 
@@ -61,6 +58,13 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         title: const Text('Категории'),
         actions: [
           IconButton(
+            icon: const Icon(Icons.favorite),
+            tooltip: 'Омилени рецепти',
+            onPressed: () {
+              Navigator.pushNamed(context, '/favorites');
+            },
+          ),
+          IconButton(
             icon: const Icon(Icons.shuffle),
             tooltip: 'Random meal',
             onPressed: _openRandom,
@@ -71,11 +75,13 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
           ? const Center(child: CircularProgressIndicator())
           : Column(
         children: [
-          SearchInput(onChanged: _onSearch, hint: 'Пребарувај категории'),
+          SearchInput(
+              onChanged: _onSearch, hint: 'Пребарувај категории'),
           Expanded(
             child: GridView.builder(
               padding: const EdgeInsets.all(8),
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate:
+              const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 childAspectRatio: 0.78,
                 crossAxisSpacing: 8,
@@ -87,7 +93,8 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                 return CategoryCard(
                   category: c,
                   onTap: () {
-                    Navigator.pushNamed(context, '/meals', arguments: c.name);
+                    Navigator.pushNamed(context, '/meals',
+                        arguments: c.name);
                   },
                 );
               },

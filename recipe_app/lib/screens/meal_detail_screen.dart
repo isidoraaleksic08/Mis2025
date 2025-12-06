@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:provider/provider.dart';
+
 import '../models/meal_detail_model.dart';
+import '../providers/favorites_provider.dart';
 import 'package:recipe_app/widgets/youtube_player_flutter.dart';
 
-class MealDetailScreen extends StatelessWidget {
+class MealDetailScreen extends StatefulWidget {
   const MealDetailScreen({Key? key}) : super(key: key);
 
   @override
+  State<MealDetailScreen> createState() => _MealDetailScreenState();
+}
+
+class _MealDetailScreenState extends State<MealDetailScreen> {
+  @override
   Widget build(BuildContext context) {
     final meal = ModalRoute.of(context)!.settings.arguments as MealDetail;
+    final favProvider = Provider.of<FavoritesProvider>(context);
+    final isFav = favProvider.isFavorite(meal.id);
 
     return Scaffold(
       backgroundColor: Colors.black,
@@ -16,6 +26,19 @@ class MealDetailScreen extends StatelessWidget {
         title: Text(meal.name),
         backgroundColor: Colors.orange,
         foregroundColor: Colors.white,
+        actions: [
+          IconButton(
+            icon: Icon(
+              isFav ? Icons.favorite : Icons.favorite_border,
+              color: Colors.white,
+              size: 28,
+            ),
+            onPressed: () {
+              favProvider.toggleFavorite(meal);
+              setState(() {});
+            },
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(12),
@@ -34,11 +57,16 @@ class MealDetailScreen extends StatelessWidget {
             Text(
               meal.name,
               style: const TextStyle(
-                  fontSize: 22, fontWeight: FontWeight.bold, color: Colors.orange),
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                color: Colors.orange,
+              ),
             ),
             const SizedBox(height: 16),
-            const Text('Ingredients',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
+            const Text(
+              'Ingredients',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
+            ),
             const SizedBox(height: 6),
             ...meal.ingredients.map(
                   (i) => Padding(
@@ -50,8 +78,10 @@ class MealDetailScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            const Text('Instructions',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
+            const Text(
+              'Instructions',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
+            ),
             const SizedBox(height: 6),
             Text(
               meal.instructions,

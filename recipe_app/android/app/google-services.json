@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "947806117858",
+    "project_id": "recipe-app-finki-43c69",
+    "storage_bucket": "recipe-app-finki-43c69.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947806117858:android:3d823d8e678367e91fa3bb",
+        "android_client_info": {
+          "package_name": "com.example.recipe_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEfDihZ8fRFcXLLq_L5Jr0gIAn8wX9kAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
