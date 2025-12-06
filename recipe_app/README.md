@@ -29,13 +29,12 @@ A new Flutter project.
 <br>
 
 ## Images from Lab3
+<img width="354" height="627" alt="Screenshot 2025-12-06 144508" src="https://github.com/user-attachments/assets/ebda1141-64b5-4821-bfb6-58463a58943a" />
+<img width="412" height="635" alt="Screenshot 2025-12-06 144518" src="https://github.com/user-attachments/assets/e140739c-6cb5-4b88-87da-2cf854cfac54" />
+<img width="420" height="623" alt="Screenshot 2025-12-06 144525" src="https://github.com/user-attachments/assets/5fcbf74b-3283-4baa-8f7a-a7b63d6329b8" />
+<img width="391" height="635" alt="Screenshot 2025-12-06 144531" src="https://github.com/user-attachments/assets/e31faa1b-0d22-4dc5-86b1-6c10f2792256" />
+<img width="373" height="637" alt="Screenshot 2025-12-06 144537" src="https://github.com/user-attachments/assets/7032eb29-9d90-46a6-9253-86aeb8b3ab29" />
+<img width="840" height="703" alt="Screenshot 2025-12-06 160941" src="https://github.com/user-attachments/assets/990d0197-6c63-44a7-9bba-9b0dfd4df2dd" />
+<img width="1133" height="496" alt="Screenshot 2025-12-06 161643" src="https://github.com/user-attachments/assets/7df4dd30-75dd-4d55-9dd6-9f9d87cb275a" />
+<img width="355" height="806" alt="Screenshot 2025-12-06 171230" src="https://github.com/user-attachments/assets/8e20c4c9-cd08-47d9-9f97-b45edf0c83b8" />
 
-<img width="373" height="637" alt="Screenshot 2025-12-06 144537" src="https://github.com/user-attachments/assets/7b03fe61-aca2-491f-ae0b-aa7f45279146" />
-<img width="391" height="635" alt="Screenshot 2025-12-06 144531" src="https://github.com/user-attachments/assets/57013d8f-4edf-4073-803a-29d386c730bf" />
-<img width="420" height="623" alt="Screenshot 2025-12-06 144525" src="https://github.com/user-attachments/assets/c0013555-a020-4bfe-b685-7446ba2f1840" />
-<img width="412" height="635" alt="Screenshot 2025-12-06 144518" src="https://github.com/user-attachments/assets/87cd2900-341d-43c7-828c-b2749eebcb0e" />
-<img width="354" height="627" alt="Screenshot 2025-12-06 144508" src="https://github.com/user-attachments/assets/38ae77fa-a44b-4e0e-a974-68c7f7656bf7" />
-
-<img width="355" height="806" alt="Screenshot 2025-12-06 171230" src="https://github.com/user-attachments/assets/c80de251-4062-47fc-aa17-5a808bbdbda3" />
-<img width="1133" height="496" alt="Screenshot 2025-12-06 161643" src="https://github.com/user-attachments/assets/33cf174f-1acc-4490-ba90-6abf8c878153" />
-<img width="840" height="703" alt="Screenshot 2025-12-06 160941" src="https://github.com/user-attachments/assets/68164170-ba36-463b-9dd5-b67a6bf14e77" />
