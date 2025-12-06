@@ -18,7 +18,10 @@ A new Flutter project.
 <img width="409" height="818" alt="12" src="https://github.com/user-attachments/assets/522f4490-45c6-469f-a339-ad69281c8480" />
 <img width="430" height="823" alt="13" src="https://github.com/user-attachments/assets/27cdfb70-6dab-4386-be56-166740101f12" />
 <img width="405" height="805" alt="14" src="https://github.com/user-attachments/assets/beceb075-9d37-40e9-b667-122558d370e3" />
-<br><br><br>
+<br>
+<br>
+<br>
+
 ## Images from Lab3
 
 <img width="373" height="637" alt="Screenshot 2025-12-06 144537" src="https://github.com/user-attachments/assets/7b03fe61-aca2-491f-ae0b-aa7f45279146" />
